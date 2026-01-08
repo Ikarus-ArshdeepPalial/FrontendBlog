@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+ 
+}
+
+.ql-container {
+  min-height: 400px;
+  font-size: 16px;
+}
+
+.ql-editor {
+  padding: 20px;
+  line-height: 1.7;
+}
+
+.ql-toolbar {
+  border-radius: 10px 10px 0 0;
+}
+
+.ql-container.ql-snow {
+  border-radius: 0 0 10px 10px;
+}
+

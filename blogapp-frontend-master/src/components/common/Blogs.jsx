@@ -1,0 +1,5 @@
+import FeaturedBlogs from '../blogs/FeaturedBlogs.jsx'
+import RecentPosts from '../blogs/RecentPosts.jsx'
+import React from 'react'
+import PopularPosts from '../blogs/PopularPosts.jsx'
+import Footer from './components/root/Footer.jsx'
