@@ -30,8 +30,6 @@ export default function BlogDetail() {
     const doc = parser.parseFromString(content, 'text/html');
     const images = doc.querySelectorAll('img');
     images.forEach(img => {
-      // If the src is already an absolute URL, don't change it.
-      // Otherwise, if it's a relative path, prepend the apiHost.
       if (img.src.startsWith('/') && !img.src.startsWith('//')) {
         img.src = `${apiHost}${img.src}`;
       }
@@ -65,7 +63,7 @@ export default function BlogDetail() {
       <BlogDetailCard
         title={blog.name}
         content={processedContent}
-        author={blog.user} 
+        author={blog.user}
         date={new Date(blog.created_at).toDateString()}
         image={blog.thumbnail}
         summary={blog.summary}
