@@ -53,7 +53,7 @@ export default function Signup() {
                         </div>
                         <div className="mb-4">
                             <label htmlFor="password2" className="block text-gray-500 font-sm mb-2">Confirm Password</label>
-                            <input placeholder='Enter your password' type="password" id="password2" value={password2} onChange={e => setPassword2(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
+                            <input placeholder='Enter your password' type="confirm_password" id="password2" value={password2} onChange={e => setPassword2(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500" />
                         </div>
                         <button type="submit" className="w-full bg-[#DA634B] text-white py-2 px-4 rounded-md transition duration-300">Create an account</button>
                         <div className="ml-20 flex  items-center mt-4">
